@@ -1,5 +1,21 @@
 class StudentsController < ApplicationController
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
+  def new
+    @student = Student.new
+  end
 
+  def create
+
+  end
+
+  def show
+    @student = Student.find_by(params[:id])
+  end
+
+  def edit
+
+  end
+
+  def update
+
+  end
 end

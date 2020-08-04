@@ -1,5 +1,22 @@
 class SchoolClassesController < ApplicationController
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
 
+  def new
+    @school_class = SchoolClass.new
+  end
+
+  def create
+    
+  end
+  
+  def show
+    @school_class = SchoolClass.find_by(params[:title])
+  end
+
+  def edit
+
+  end
+
+  def update
+
+  end
 end

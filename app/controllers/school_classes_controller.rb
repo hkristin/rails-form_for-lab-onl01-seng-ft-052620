@@ -5,9 +5,9 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
-    
+
   end
-  
+
   def show
     @school_class = SchoolClass.find_by(params[:title])
   end
